@@ -21,6 +21,10 @@ Three tools are available to the model:
 - Jurisdiction verification checklist (does not decide jurisdiction)
 - Calendar-date arithmetic (does not establish legal deadlines or counting conventions)
 
+## Charge-sheet screening
+
+Open **Case triage** to run a limited keyword scan of pasted, redacted charge-sheet text in the browser. It reports whether selected labels and a statutory-section reference appear in the text; it does not upload that text or send it to the AI assistant. Matches are not verification of accuracy, completeness, legal sufficiency, statutory elements, bail requirements, or jurisdiction. Review the original document and current primary sources. Do not paste confidential or personally identifying information.
+
 ## Safety and limitations
 
 This prototype provides research support, not legal advice. It does not independently verify uploaded documents, current law, bail eligibility, jurisdiction, or legal sufficiency. Do not upload confidential, privileged, or personally identifying information. Verify any legal proposition against current primary sources and consult a qualified Ugandan legal professional.

@@ -8,6 +8,7 @@ import {
   ChevronDown,
   FileText,
   Landmark,
+  ListChecks,
   Plus,
   Scale,
   ShieldCheck,
@@ -16,6 +17,7 @@ import {
   X,
 } from "lucide-react";
 import { FormEvent, useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 type Source = { id: string; title: string; sourceUrl: string; content: string };
 type Citation = { citation: string; title: string; sourceUrl: string };
@@ -199,6 +201,7 @@ export default function Home() {
         <header className="topbar">
           <div className="breadcrumb">Workspace <span>/</span> <strong>Legal research</strong></div>
           <div className="topbar-actions">
+            <Link className="triage-nav-link" href="/triage"><ListChecks size={15} /> Case triage</Link>
             <button className="text-button" onClick={exportConversation} disabled={!messages.length}><ArrowDownToLine size={16} /> Export</button>
             <button className="knowledge-button" onClick={() => setPanelOpen(true)}><BookOpenText size={16} /> Sources <span>{sources.length}</span><ChevronDown size={14} /></button>
           </div>
